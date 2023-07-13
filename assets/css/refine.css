@@ -653,6 +653,7 @@ font-size: 1.5rem;
 }
 
 .controls{
+    
     position: relative;
 }
 
@@ -663,19 +664,40 @@ font-size: 1.5rem;
     font-size: 1rem;
   
     z-index: 10;
-    color: #5b1839;
+    
 font-weight: 600;
 }
 
 .next{
     right: 4rem;
-    background-color: #f7a99c;
-
+    background-color: #7b1235;
+    border: 2.5px solid #000;
+    padding: 1.5rem 1.5rem 1.75rem 0.5rem;
+    
+font-size: 1.2rem;
+color: #fff;
+-webkit-clip-path: polygon(0 0, 0% 100%, 100% 50%);
+clip-path: polygon(0 0, 0% 100%, 100% 50%);
+transition: 0.4s;
 }
+
 .prev{
      left: 6rem;
-    
+     border: 2.5px solid #7b1235;
+     padding: 1.5rem 0.5rem 1.75rem 1.5rem;
+     
+ font-size: 1.2rem;
+ color: #7b1235;
+ -webkit-clip-path: polygon(100% 0, 0 50%, 100% 100%) !important;
+ clip-path: polygon(100% 0, 0 50%, 100% 100%) !important;
     background-color: #fff;
+    transition: 0.4s;
+}
+.next:hover{
+    transform: translateX(10%);
+}
+.prev:hover{
+    transform: translateX(-10%);
 }
 
 .testimonial .CT{
@@ -683,7 +705,6 @@ font-weight: 600;
     font-weight: bolder;
     font-size: 3rem;
 }
-
 
 
 
