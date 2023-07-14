@@ -416,38 +416,41 @@ font-size: 0.8rem !important;
     justify-content: center;
   
     position: absolute;
-    height: 38vh;
-    top:1.8rem;
+    height: 38vh  !important;
+    top:1.8rem !important;
     left: 0%;
   
-    background:#5b1839;
+    background:#5b1839 !important;
     
     width: 100%;
-    z-index:4;
-    opacity:0;
-    transition: all ease-in-out 0.5s;
+    z-index:8 !important;
+    opacity:0 !important;
+    transition: all ease-in-out 0.5s !important;
 }
+
 .work-profile-2:hover .work-inner-text .work-image{
-    opacity: 0.8;
-    left: 10%;
+    opacity: 1 !important;
+    left: 10% !important;
 }
 .work-profile-2:hover img{
-    opacity: 0.7;
+    opacity: 0.8 !important;
 
 }
 
 .work-inner-text .work-image p{
-    font-size: 2.5rem;
+    font-size: 2.5rem !important;
 }
 .work-inner-text .work-image span{
-    font-size: 1rem;
+    font-size: 1rem !important;
 }
 .work-inner-text .work-image .readmore span{
-    font-size: 1.4rem;
+    font-size: 1.4rem !important;
     cursor: pointer;
 }
+
+
 .view-btn span{
-    font-size: 1.5rem;
+    font-size: 1.5rem !important;
 }
 .work-wave{
     position: relative;
@@ -597,8 +600,11 @@ font-size: 0.8rem !important;
     display: flex;
     height:40rem ;
     margin-bottom: 7rem;
-   
+     /* Adjust this width to your desired value */
+ 
 }
+
+
 .testimonial::before{
     content: "";
     position: absolute;
@@ -615,6 +621,7 @@ font-size: 0.8rem !important;
     width: 100%;
     height: 100%;
     padding-left: 6rem !important;
+    
   }
 
  
@@ -657,7 +664,7 @@ font-size: 1.5rem;
     position: relative;
 }
 
-.next,.prev,.scroll{
+.next,.prev,.scrollbar,.hr{
     
     position: absolute !important;
     bottom: 0;
@@ -680,6 +687,23 @@ color: #fff;
 clip-path: polygon(0 0, 0% 100%, 100% 50%);
 transition: 0.4s;
 }
+.hr
+{
+    bottom: 1rem;
+    left: 15rem;
+    width: 60%; 
+    
+   
+}
+.scrollbar{
+    bottom: 2rem;
+    left: 15rem;
+    width:60%; 
+    height: 1rem;
+   
+  
+}
+
 
 .prev{
      left: 6rem;
